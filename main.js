@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Create an Audio element
     const audio = new Audio("happy.mp3");
+    audio.loop = true; //loop da musssiicccc!!
   
     function handleNoClick() {
       noCount++;
