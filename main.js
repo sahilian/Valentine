@@ -27,12 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create an Audio element
   const audio = new Audio("happy.mp3");
-  audio.loop = true; // Loop Da Muziiik
+  audio.loop = true; // Loop Da Muzzikiiik
 
   function handleNoClick() {
     noCount++;
     updateNoButtonText();
-    showSadBearGif();
   }
 
   function updateNoButtonText() {
@@ -59,14 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
       <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
       <div class="text-4xl font-bold my-4">Ok yay!!!</div>
     `;
-  }
-
-  function showSadBearGif() {
-    const sadBearGif = document.createElement("div");
-    sadBearGif.innerHTML = `
-      <img src="https://media1.tenor.com/m/5t-iIxnzE8MAAAAC/sad-bear-cry.gif" />
-    `;
-    valentineContainer.appendChild(sadBearGif);
   }
 
   function init() {
