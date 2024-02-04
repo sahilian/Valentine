@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create an Audio element
   const audio = new Audio("happy.mp3");
-  audio.loop = true; // loop da muzzikk
+  audio.loop = true; // Loop Da Muziiik
 
   function handleNoClick() {
     noCount++;
@@ -62,9 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showSadBearGif() {
-    valentineContainer.innerHTML = `
+    const sadBearGif = document.createElement("div");
+    sadBearGif.innerHTML = `
       <img src="https://media1.tenor.com/m/5t-iIxnzE8MAAAAC/sad-bear-cry.gif" />
     `;
+    valentineContainer.appendChild(sadBearGif);
   }
 
   function init() {
