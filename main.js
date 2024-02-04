@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleNoClick() {
     noCount++;
     updateNoButtonText();
+    showSadBearGif();
   }
 
   function updateNoButtonText() {
@@ -39,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttonText = phrases[index];
     noButton.textContent = buttonText;
 
-    // Dynamically adjust the font size based on noCount
     const yesButtonSize = noCount * 20 + 16;
     yesButton.style.fontSize = `${yesButtonSize}px`;
   }
@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!yesPressed) {
       yesPressed = true;
       showYesContent();
-      // Play the audio file
       audio.play();
     }
   }
@@ -58,6 +57,18 @@ document.addEventListener("DOMContentLoaded", function () {
       <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
       <h1 class="text-4xl font-bold my-4">Ok yay!!!</h1>
     `;
+  }
+
+  function showSadBearGif() {
+    const bearImage = document.querySelector(".valentine-container img");
+
+    if (bearImage) {
+      const buttonType = yesPressed ? "yes" : "no";
+
+      if (buttonType === "no") {
+        bearImage.src = "https://media1.tenor.com/m/5t-iIxnzE8MAAAAC/sad-bear-cry.gif";
+      }
+    }
   }
 
   function init() {
