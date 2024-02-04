@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function showYesContent() {
     valentineContainer.innerHTML = `
       <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-      <h1 class="text-4xl font-bold my-4">Ok yay!!!</h1>
+      <h1 class="text-4xl font-bold my-4">Yayyy!! Yippee!!</h1>
     `;
   }
 
